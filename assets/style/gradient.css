@@ -1,0 +1,11 @@
+.bg-gradient-top {
+  background: transparent
+    linear-gradient(90deg, transparent 0%, #ffffff 50%, transparent 100%) 0% 0%
+    no-repeat padding-box;
+}
+
+.bg-gradient-left {
+  background: transparent
+    linear-gradient(180deg, transparent 0%, #ffffff 50%, transparent 100%) 0% 0%
+    no-repeat padding-box;
+}

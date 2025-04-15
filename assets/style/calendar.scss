@@ -1,0 +1,29 @@
+.vc-weeks,
+.vc-header {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.vc-header {
+  padding-bottom: 5px;
+  --vc-text-lg: 16px;
+  border-bottom: 1px solid #ffffff10;
+
+  .vc-arrow:hover {
+    background-color: transparent;
+  }
+}
+
+.vc-focus:focus-within {
+  border: none;
+}
+
+.vc-weekday {
+  font-size: 13px;
+  --vc-weekday-color: #828282;
+}
+
+.vc-day.is-not-in-month * {
+  opacity: 0.3 !important;
+  pointer-events: inherit;
+}

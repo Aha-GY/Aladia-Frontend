@@ -1,0 +1,92 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #101010;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* Prevents layout shift when modals open by ensuring the scrollbar is always present,  
+   even when Element Plus dialogs (el-dialog) try to hide it */
+body.el-popup-parent--hidden {
+  overflow: fixed;
+  width: 100%;
+}
+  
+
+iframe {
+  color-scheme: light;
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.not-allowed * {
+  cursor: not-allowed !important;
+}
+
+.popupborder {
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 12px 32px 4px rgba(0,0,0,0.36),0px 8px 20px rgba(0,0,0,0.72);
+}
+
+.ql-editor-content{
+  blockquote {
+    border-left: 4px solid #ccc;
+    margin-bottom: 5px ;
+    margin-top: 5px ;
+    padding-left: 16px ;
+  }
+  ol{
+    margin-left: 1.5rem;
+    list-style: decimal;
+  }
+  ul{
+    margin-left: 1.5rem;
+    list-style: disc;
+  }
+  pre{
+    white-space: pre-wrap;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+}
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear, /* 针对 IE/Edge */
+input[type="password"]::-webkit-textfield-decoration-container {
+  /* 针对 Chrome/Webkit 浏览器 */
+  display: none;
+}
+
+/* 代码块复制按钮在点击之后（复制成功）的样式 */
+.hljs-copy-button[data-copied="true"] {
+  color: white;
+  background-color: #35b979;
+  border-color: #31a46d;
+}

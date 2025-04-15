@@ -1,0 +1,67 @@
+.el-overlay-message-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  .el-message-box {
+    background-color: #060606;
+    .el-message-box__headerbtn {
+      width: 28px;
+      height: 28px;
+      margin-right: 5px;
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+      .el-message-box__close {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+        color: #fff;
+        scale: 1;
+        transform: rotate(0deg);
+      }
+      &:hover {
+        background-color: rgb(255 255 255 / 0.05);
+        .el-message-box__close {
+          color: #fff;
+          scale: 1.25;
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .el-message-box__title {
+      color: #b0b0b0;
+      font-size: 1.25rem;
+    }
+    .el-message-box__btns {
+      --el-color-white: #101010 !important;
+      --el-color-primary: #F0CA41 !important;
+      --el-color-primary-light-3: #B59523 !important;
+      --el-color-primary-dark-2: #B59523 !important;
+      .el-button {
+        border: none !important;
+        &:hover {
+          background-color: transparent !important;
+        }
+      }
+      .el-button:not(.el-button--primary) {
+        color: #cfd3dc !important;
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .el-button:active,
+      .el-button:focus-visible {
+        outline:none !important;
+        border: none !important;
+      }
+      .el-button--primary {
+        &:hover {
+          background-color: #B59523 !important;
+        }
+      }
+    }
+  }
+}

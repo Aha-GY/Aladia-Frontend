@@ -1,0 +1,62 @@
+.ql-slash-container {
+  width: 12.5rem;
+  max-height: 31.25rem;
+  z-index: 9001;
+  overflow: auto;
+  backdrop-filter: blur(8px);
+  border-width: 1px;
+  border-color: rgb(255 255 255 / 0.1);
+  border-radius: 0.3125rem;
+  background-color: rgb(0 0 0 / 0.5);
+  box-shadow: 0 2px 6px #000;
+  display: none;
+}
+
+.ql-slash-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.ql-slash-list-type {
+  color: rgba(255, 255, 255, 0.4);
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.ql-slash-list-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  border-radius: 0.3125rem;
+  border: none;
+  padding: 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.slash-list-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.75rem;
+  border-radius: 0.3125rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.75rem;
+}
+.ql-slash-list-item.selected {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.ql-slash-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}

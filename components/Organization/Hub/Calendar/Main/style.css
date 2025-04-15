@@ -1,0 +1,33 @@
+@keyframes swipe-left {
+  0% {
+    opacity: 0.5;
+    transform: translateX(24px);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes swipe-right {
+  0% {
+    opacity: 0.5;
+    transform: translateX(-24px);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.transition--left {
+  animation: swipe-left 200ms ease-out;
+  animation-fill-mode: forwards;
+}
+
+.transition--right {
+  animation: swipe-right 200ms ease-out;
+  animation-fill-mode: forwards;
+}

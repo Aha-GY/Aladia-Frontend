@@ -1,0 +1,13 @@
+.el-tabs {
+    &__item {
+       &.is-active {
+            --el-color-primary: #E0B92C;
+        }
+        &:hover {
+            --el-color-primary: #E0B92C;
+        }
+    }
+    &__active-bar {
+        --el-color-primary: #E0B92C;
+    }
+}

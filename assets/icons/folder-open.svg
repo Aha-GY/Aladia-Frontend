@@ -1,0 +1,40 @@
+<svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Open Folder" clip-path="url(#clip0_476_9728)">
+<g id="Open folder">
+<path id="Folder Icon RX" d="M14.5 2H8.5L6.5 0H1.5C1.10218 0 0.720644 0.158035 0.43934 0.43934C0.158035 0.720644 0 1.10218 0 1.5L0 10.5C0 10.8978 0.158035 11.2794 0.43934 11.5607C0.720644 11.842 1.10218 12 1.5 12H14.5C14.8978 12 15.2794 11.842 15.5607 11.5607C15.842 11.2794 16 10.8978 16 10.5V3.5C16 3.10218 15.842 2.72064 15.5607 2.43934C15.2794 2.15804 14.8978 2 14.5 2Z" fill="url(#paint0_linear_476_9728)"/>
+<path id="Folder Icon LX" d="M14.5 2H8.5L6.5 0H1.5C1.10218 0 0.720644 0.158035 0.43934 0.43934C0.158035 0.720644 0 1.10218 0 1.5L0 10.5C0 10.8978 0.158035 11.2794 0.43934 11.5607C0.720644 11.842 1.10218 12 1.5 12H14.5C14.8978 12 15.2794 11.842 15.5607 11.5607C15.842 11.2794 16 10.8978 16 10.5V3.5C16 3.10218 15.842 2.72064 15.5607 2.43934C15.2794 2.15804 14.8978 2 14.5 2Z" fill="url(#paint1_linear_476_9728)"/>
+<rect id="Paper 2" x="2.47607" y="1.33325" width="10.6667" height="6.66667" rx="2" fill="#D9D9D9"/>
+<g id="Paper 1" filter="url(#filter0_d_476_9728)">
+<rect x="2.47607" y="4" width="10.6667" height="5.33333" rx="2" fill="#D9D9D9"/>
+</g>
+<path id="Folder Icon" d="M1.5 7.00115H7.5L9.5 6.00196H14.5C14.8697 5.98708 15.2345 6.05744 15.5154 6.19774C15.7962 6.33805 15.9703 6.53698 16 6.75135V11.2486C15.9703 11.463 15.7962 11.662 15.5154 11.8023C15.2345 11.9426 14.8697 12.0129 14.5 11.998H1.5C1.13033 12.0129 0.765481 11.9426 0.484645 11.8023C0.203809 11.662 0.0296587 11.463 0 11.2486L0 7.75008C0.0298579 7.53579 0.204094 7.33698 0.484908 7.19677C0.765722 7.05656 1.13046 6.98627 1.5 7.00115Z" fill="url(#paint2_linear_476_9728)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_476_9728" x="-1.52393" y="-2" width="18.6667" height="13.3334" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_476_9728"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_476_9728" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_476_9728" x1="1.232" y1="6.57935e-08" x2="3.22241" y2="6.41035" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FB9D3E"/>
+<stop offset="1" stop-color="#FF8D02"/>
+</linearGradient>
+<linearGradient id="paint1_linear_476_9728" x1="0" y1="0" x2="4" y2="5.6" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FB9D3E"/>
+<stop offset="1" stop-color="#FF8D02" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear_476_9728" x1="16" y1="3.756" x2="13.2776" y2="14.5964" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FBD83E"/>
+<stop offset="1" stop-color="#FF8D02"/>
+</linearGradient>
+<clipPath id="clip0_476_9728">
+<rect width="16" height="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>

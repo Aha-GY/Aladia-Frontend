@@ -1,0 +1,118 @@
+.slide-fade-down-enter-active {
+  transition: all 0.25s ease-in-out;
+  transition-delay: 0.35s;
+}
+
+.slide-fade-down-leave-active {
+  transition: all 0.25s ease-in-out;
+}
+
+.slide-fade-down-enter-from {
+  opacity: 0;
+  transform: translateY(-6rem);
+  pointer-events: none;
+}
+
+.slide-fade-down-leave-to {
+  opacity: 0;
+  transform: translateY(-6rem);
+  pointer-events: none;
+}
+
+.slide-fade-up-enter-active {
+  transition: all 0.25s ease-in-out;
+  transition-delay: 0.35s;
+}
+
+.slide-fade-up-leave-active {
+  transition: all 0.25s ease-in-out;
+}
+
+.slide-fade-up-enter-from {
+  opacity: 0;
+  transform: translateY(6rem);
+  pointer-events: none;
+}
+
+.slide-fade-up-leave-to {
+  opacity: 0;
+  transform: translateY(6rem);
+  pointer-events: none;
+}
+
+.slide-fade-left-enter-active {
+  transition: all 0.25s ease-in-out;
+  transition-delay: 0.1s;
+  position: relative;
+}
+
+.slide-fade-left-leave-active {
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+}
+
+.slide-fade-left-enter-from {
+  opacity: 0;
+  transform: translateX(100%);
+  pointer-events: none;
+}
+
+.slide-fade-left-leave-to {
+  opacity: 0;
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+
+.slide-fade-right-enter-active {
+  transition: all 0.25s ease-in-out;
+  transition-delay: 0.1s;
+  position: relative;
+}
+
+.slide-fade-right-leave-active {
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+}
+
+.slide-fade-right-enter-from {
+  opacity: 0;
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+
+.slide-fade-right-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+  pointer-events: none;
+}
+
+.slide-fade-in-enter-active {
+  transition: all 0.25s ease-in-out;
+}
+.slide-fade-in-delay {
+  transition-delay: 0.35s;
+}
+
+.slide-fade-in-leave-active {
+  transition: all 0.25s ease-in-out;
+}
+
+.slide-fade-in-enter-from {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slide-fade-in-leave-to {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 内置过渡 */
+.el-zoom-in-top-enter-active,
+.el-zoom-in-top-leave-active {
+  transform: scale(1) !important;
+}
+.el-zoom-in-top-enter-from,
+.el-zoom-in-top-leave-active {
+  transform: scale(0) !important;
+}

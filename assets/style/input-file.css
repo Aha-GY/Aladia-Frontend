@@ -1,0 +1,9 @@
+input[type="file"],
+input[type="file"]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+.autofill-input:-webkit-autofill, .autofill-textarea:-webkit-autofill {
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0 1000px var(--bg-body) inset;
+}

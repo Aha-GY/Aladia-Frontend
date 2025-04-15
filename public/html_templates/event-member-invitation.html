@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Invitation</title>
+  </head>
+  <body style="margin: 0; padding: 0">
+    <table
+      width="100%"
+      height="100%"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      style="
+        background-color: #e6e6e6;
+        color: #f4f4f4;
+        font-family: Roboto, 'Arial', sans-serif;
+      "
+    >
+      <tr>
+        <td align="center">
+          <table
+            width="640"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            style="
+              background-image: url('https://storage.googleapis.com/{{bucketName}}/templates/bg.png');
+              background-size: cover;
+              border: 1px solid #2f2f2f;
+              margin-top: 16px;
+              margin-bottom: 16px;
+              border-radius: 5px;
+              overflow: hidden;
+              font-size: 14px;
+            "
+          >
+            <!-- Header Section - LOGO -->
+            <tr>
+              <td width="48"></td>
+              <td
+                align="center"
+                style="
+                  padding-top: 56px;
+                  padding-bottom: 25px;
+                  color: #f4f4f4 !important;
+                "
+              >
+                <img
+                  src="https://storage.googleapis.com/{{bucketName}}/templates/logo_header.png"
+                  alt="Aladia Logo"
+                  width="150"
+                  style="display: block"
+                />
+              </td>
+              <td width="48"></td>
+            </tr>
+            <!-- Content Section -->
+            <!-- section1 -->
+            <tr>
+              <td width="48"></td>
+              <td
+                style="
+                  padding: 16px 25px;
+                  margin-bottom: 10px;
+                  background: #0c0c0c;
+                  border-radius: 5px;
+                  border: 1px solid #3e3e3e;
+                "
+              >
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td>
+                      <table
+                        border="0"
+                        width="128"
+                        cellpadding="0"
+                        cellspacing="0"
+                        style="border-radius: 5px; overflow: hidden"
+                      >
+                        <tr>
+                          <td border="0" colspan="2" align="center">
+                            <p
+                              style="
+                                margin: 0;
+                                padding: 4px 0;
+                                background: #fed54a;
+                                color: #101010 !important;
+                              "
+                            >
+                              {{month}}
+                            </p>
+                          </td>
+                        </tr>
+                        <tr
+                        >
+                          <td>
+                            <table
+                              style="
+                                background-image: url('https://storage.googleapis.com/93f06186-0d7c-4bf0-9ed3-596a7d4aa7af/icons/date_bg.png');
+                                background-size: 128px;
+                                background-repeat: no-repeat;
+                              "
+                              width="128"
+                              height="48"
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    font-size: 38px;
+                                    padding: 0 0 2px 0;
+                                    margin: 0;
+                                    height: 48px;
+                                    overflow: hidden;
+                                    color: #101010 !important;
+                                  "
+                                  width="40"
+                                  align="center"
+                                >
+                                  {{day}}
+                                </td>
+                                <td
+                                  style="
+                                    font-size: 14px;
+                                    padding: 0 0 2px 0;
+                                    margin: 0;
+                                    height: 48px;
+                                    overflow: hidden;
+                                    color: #101010 !important;
+                                  "
+                                  align="center"
+                                >
+                                  {{weekDay}}
+                                </td>
+                              </tr>
+                            </table>   
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td>
+                      <p
+                        style="
+                          margin: 0;
+                          padding: 0 0 16px 20px;
+                          color: #f4f4f4 !important;
+                          font-size: 16px;
+                        "
+                      >
+                        <!-- Payment & Course Task Overview -->
+                        {{entityName}}
+                      </p>
+                      <p
+                        style="
+                          margin: 0;
+                          padding: 0 0 0 20px;
+                          color: #f4f4f4 !important;
+                        "
+                      >
+                        <a
+                          href="{{frontendBaseUrl}}/invite/{{calendarId}}?token={{token}}&type={{entityType}}&eventId={{entityId}}"
+                          style="
+                            text-decoration: none;
+                            color: #fed54a !important;
+                          "
+                        >
+                          <!-- View On Aliadia Calendar -->
+                          View on Aladia Calendar
+                        </a>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="48"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="padding: 5px 0"></td>
+              <td></td>
+            </tr>
+            <!-- section2 - link-->
+            <tr>
+              <td width="48"></td>
+              <td
+                style="
+                  padding: 16px 25px;
+                  background: #0c0c0c;
+                  border-radius: 5px;
+                  border: 1px solid #3e3e3e;
+                "
+              >
+                <p
+                  style="
+                    padding: 3px 6px;
+                    margin: 0;
+                    background: #E0B92C;
+                    color: #101010;
+                    width: 140px;
+                    border-radius: 3px;
+                  "
+                >
+                  Join with Meeting Link
+                </p>
+                <p
+                  style="
+                    margin: 0;
+                    padding: 10px 0;
+                    color: #f4f4f4 !important;
+                    font-size: 16px;
+                  "
+                >
+                  <img
+                    src="https://storage.googleapis.com/93f06186-0d7c-4bf0-9ed3-596a7d4aa7af/icons/icon_link.png"
+                    alt="link icon"
+                    width="16"
+                    height="16"
+                    style="vertical-align: text-top; margin-right: 8px"
+                  />
+                  Meeting Link
+                </p>
+                <p style="margin: 0; padding: 0">
+                  <a
+                    href="{{frontendBaseUrl}}/auth/meet?calendarId={{calendarId}}&eventId={{entityId}}&type=meet"
+                    style="text-decoration: none; color: #b7b7b7 !important"
+                  >
+                    {{frontendBaseUrl}}/auth/meet?calendarId={{calendarId}}&eventId={{entityId}}&type=meet
+                  </a>
+                </p>
+              </td>
+              <td width="48"></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td style="padding: 5px 0"></td>
+              <td></td>
+            </tr>
+            <!-- section3 - when -->
+            <tr>
+              <td width="48"></td>
+              <td
+                style="
+                  padding: 16px 25px;
+                  background: #0c0c0c;
+                  border-radius: 5px;
+                  border: 1px solid #3e3e3e;
+                "
+              >
+                <p
+                  style="
+                    margin: 0;
+                    padding: 0 0 10px 0;
+                    color: #f4f4f4 !important;
+                    font-size: 16px;
+                  "
+                >
+                  <img
+                    src="https://storage.googleapis.com/93f06186-0d7c-4bf0-9ed3-596a7d4aa7af/icons/lcon_when.png"
+                    alt="when icon"
+                    width="15"
+                    height="15"
+                    style="vertical-align: text-top; margin-right: 8px"
+                  />
+                  When
+                </p>
+                <p style="margin: 0; padding: 0; color: #b7b7b7 !important">
+                  {{when}}
+                </p>
+              </td>
+              <td width="48"></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td style="padding: 5px 0"></td>
+              <td></td>
+            </tr>
+            <!-- section4 - Description -->
+            <tr>
+              <td width="48"></td>
+              <td
+                style="
+                  padding: 16px 25px;
+                  background: #0c0c0c;
+                  border-radius: 5px;
+                  border: 1px solid #3e3e3e;
+                "
+              >
+                <p
+                  style="
+                    margin: 0;
+                    padding: 0 0 10px 0;
+                    color: #f4f4f4 !important;
+                    font-size: 16px;
+                  "
+                >
+                  <img
+                    src="https://storage.googleapis.com/93f06186-0d7c-4bf0-9ed3-596a7d4aa7af/icons/icon_align.png"
+                    alt="desciption icon"
+                    width="15"
+                    height="15"
+                    style="vertical-align: text-top; margin-right: 8px"
+                  />
+                  Description
+                </p>
+                <p style="margin: 0; padding: 0; color: #b7b7b7 !important">
+                  {{description}}
+                </p>
+              </td>
+              <td width="48"></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td style="padding: 5px 0"></td>
+              <td></td>
+            </tr>
+            <!-- section5 - Guests -->
+            <tr>
+              <td width="48"></td>
+              <td
+                style="
+                  padding: 16px 25px;
+                  background: #0c0c0c;
+                  border-radius: 5px;
+                  border: 1px solid #3e3e3e;
+                "
+              >
+                <p
+                  style="
+                    margin: 0;
+                    padding: 0 0 10px 0;
+                    color: #f4f4f4 !important;
+                    font-size: 16px;
+                  "
+                >
+                  <img
+                    src="https://storage.googleapis.com/93f06186-0d7c-4bf0-9ed3-596a7d4aa7af/icons/icon_man.png"
+                    alt="guest icon"
+                    width="15"
+                    height="15"
+                    style="vertical-align: text-top; margin-right: 8px"
+                  />
+                  Guests
+                </p>
+                {{#each guests}}
+                <p
+                  style="
+                    margin: 0;
+                    padding: 0 0 4px 0;
+                    color: #b7b7b7 !important;
+                  "
+                >
+                  {{this.guest}}
+                </p>
+                {{/each}}
+                <p style="margin: 0; padding: 10px 0 0 0">
+                  <a
+                    href="{{frontendBaseUrl}}/invite/{{calendarId}}?token={{token}}&type={{entityType}}&eventId={{entityId}}"
+                    style="text-decoration: none; color: #fed54a !important"
+                  >
+                    View all Guest Info
+                  </a>
+                </p>
+              </td>
+              <td width="48"></td>
+            </tr>
+
+            <!-- section6 - Reply -->
+            <tr>
+              <td width="48"></td>
+              <td>
+                <p style="margin: 0; padding: 25px 0 15px">
+                  Reply
+                  <span style="color: #b7b7b7 !important"
+                    >for {{ownerEmail}}</span
+                  >
+                </p>
+              </td>
+              <td width="48"></td>
+            </tr>
+            <tr>
+              <td width="48"></td>
+              <td>
+                <table>
+                  <tr>
+                    <td>
+                      <div
+                        style="
+                          border: 1px solid #484848;
+                          padding: 3px 15px;
+                          border-radius: 3px;
+                        "
+                      >
+                        <a
+                          href="{{frontendBaseUrl}}/invite/{{calendarId}}?token={{token}}&type={{entityType}}&eventId={{entityId}}"
+                          style="
+                            text-decoration: none;
+                            color: #b7b7b7 !important;
+                          "
+                          >Yes</a
+                        >
+                      </div>
+                    </td>
+                    <td>
+                      <div
+                        style="
+                          border: 1px solid #484848;
+                          padding: 3px 15px;
+                          border-radius: 3px;
+                        "
+                      >
+                        <a
+                          href="{{frontendBaseUrl}}/decline/{{calendarId}}?token={{token}}&type={{entityType}}&eventId={{entityId}}"
+                          style="
+                            text-decoration: none;
+                            color: #b7b7b7 !important;
+                          "
+                          >No</a
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="48"></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td style="padding: 5px 0"></td>
+              <td></td>
+            </tr>
+            <!-- section7 - Guests -->
+            <tr>
+              <td width="48"></td>
+              <td
+                style="
+                  padding: 16px 25px;
+                  background: #0c0c0c;
+                  border-radius: 5px;
+                  border: 1px solid #3e3e3e;
+                "
+              >
+                <p
+                  style="
+                    margin: 0;
+                    padding: 0 0 15px 0;
+                    color: #b7b7b7 !important;
+                  "
+                >
+                  Invitation from Aladia Calendar
+                </p>
+                <p
+                  style="
+                    margin: 0;
+                    padding: 0 0 15px 0;
+                    color: #b7b7b7 !important;
+                  "
+                >
+                  You are receiving this email because you are subscribed to
+                  calendar notifications. To stop receiving these emails, go to
+                  Settings, and switch off “Allow Caledar Settings”
+                </p>
+                <p style="margin: 0; padding: 0; color: #b7b7b7 !important">
+                  Forwarding this invitation could allow any recipient to send a
+                  response to the organizer, be added to the guest list, invite
+                  others regardless of their own invitation status, or modify
+                  your RSVP.
+                  <a
+                    href="{{frontendBaseUrl}}/invite/{{calendarId}}?token={{token}}&type={{entityType}}&eventId={{entityId}}"
+                    style="text-decoration: none; color: #fed54a !important"
+                    >Learn more</a
+                  >
+                </p>
+              </td>
+              <td width="48"></td>
+            </tr>
+
+            <tr>
+              <td width="48"></td>
+              <td
+                style="
+                  padding-top: 56px;
+                  padding-bottom: 16px;
+                  color: #f4f4f4 !important;
+                "
+              >
+                <p style="margin: 0; padding: 0; color: #f4f4f4 !important">
+                  Best regards,
+                </p>
+              </td>
+              <td width="48"></td>
+            </tr>
+            <tr>
+              <td width="48"></td>
+              <td style="padding-bottom: 30px; color: #f4f4f4 !important">
+                <img
+                  src="https://storage.googleapis.com/{{bucketName}}/templates/logo_single.png"
+                  alt="logo"
+                  width="29"
+                  height="29"
+                  style="vertical-align: middle; margin-right: 8px"
+                />
+                Aladia Team
+              </td>
+              <td width="48"></td>
+            </tr>
+            <!-- Footer Section -->
+            <tr>
+              <td width="48" style="background-color: #1e1e1e"></td>
+              <td
+                align="center"
+                style="
+                  padding: 23px;
+                  background-color: #1e1e1e;
+                  color: #d9d9d9;
+                  font-size: 12px;
+                "
+              >
+                <img
+                  src="https://storage.googleapis.com/{{bucketName}}/templates/logo_footer.png"
+                  alt="footer Logo"
+                  width="94"
+                  height="31"
+                />
+                <p style="margin: 31px 0">
+                  <a
+                    href="facebook_link"
+                    style="margin-right: 24px; text-decoration: none"
+                  >
+                    <img
+                      src="https://storage.googleapis.com/{{bucketName}}/templates/facebook.png"
+                      alt="Facebook"
+                      width="28"
+                      height="28"
+                      style="vertical-align: baseline"
+                    />
+                  </a>
+                  <a
+                    href="instagram_link"
+                    style="margin-right: 24px; text-decoration: none"
+                  >
+                    <img
+                      src="https://storage.googleapis.com/{{bucketName}}/templates/instagram.png"
+                      alt="Instagram"
+                      width="28"
+                      height="28"
+                      style="vertical-align: baseline"
+                    />
+                  </a>
+                  <a
+                    href="youtube_link"
+                    style="margin-right: 24px; text-decoration: none"
+                  >
+                    <img
+                      src="https://storage.googleapis.com/{{bucketName}}/templates/youtube.png"
+                      alt="YouTube"
+                      width="30"
+                      style="vertical-align: baseline"
+                    />
+                  </a>
+                  <a
+                    href="linkedin_link"
+                    style="margin-right: 24px; text-decoration: none"
+                  >
+                    <img
+                      src="https://storage.googleapis.com/{{bucketName}}/templates/linkedin.png"
+                      alt="LinkedIn"
+                      width="26"
+                      height="26"
+                      style="vertical-align: baseline"
+                    />
+                  </a>
+                  <a href="twitter_link" style="text-decoration: none">
+                    <img
+                      src="https://storage.googleapis.com/{{bucketName}}/templates/x-twitter.png"
+                      alt="Twitter"
+                      width="24"
+                      height="24"
+                      style="vertical-align: baseline"
+                    />
+                  </a>
+                </p>
+                <p style="margin-bottom: 16px">
+                  via San Martino della battaglia, 8A, Brescia, Italia
+                </p>
+                <p style="margin: 5px 0; padding: 0">
+                  This email was sent to
+                  <a
+                    href="mailto:mattiavaccari@aladia.io"
+                    style="color: #d9d9d9"
+                  >
+                    <!-- TODO: replace with dynamic codes -->
+                    {{userEmail}}
+                  </a>
+                  .
+                  <!-- TODO: replace with dynamic codes -->
+                  <a href="{{updateLink}}" style="color: #d9d9d9">
+                    Update your notification settings
+                  </a>
+                  or
+                  <!-- TODO: replace with dynamic codes -->
+                  <a href="{{unsubscribeLink}}" style="color: #d9d9d9">
+                    unsubscribe
+                  </a>
+                  .
+                </p>
+              </td>
+              <td width="48" style="background-color: #1e1e1e"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

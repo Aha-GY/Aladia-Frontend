@@ -1,0 +1,10 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.aladia.app",
+        "sha256_cert_fingerprints": ["DB:B7:1B:D5:40:D0:1F:67:17:54:4E:B5:3B:F8:83:03:69:CB:1A:55:A1:56:E5:8D:48:72:E3:7B:44:8F:D4:AA"]
+      }
+    }
+  ]

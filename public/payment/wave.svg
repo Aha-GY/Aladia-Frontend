@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.993" height="20.621" viewBox="0 0 15.993 20.621">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.4;
+      }
+
+      .cls-2 {
+        fill: #b5b4bf;
+      }
+    </style>
+  </defs>
+  <g id="contactless_icon" data-name="contactless icon" class="cls-1" transform="translate(-20.689 -17.417)">
+    <path id="Tracciato_3649" data-name="Tracciato 3649" class="cls-2" d="M35.078,19.988a.707.707,0,1,0-1.163.805,13.361,13.361,0,0,1,0,15.2.707.707,0,0,0,1.163.805,14.776,14.776,0,0,0,0-16.807Z" transform="translate(-3.838 -0.664)"/>
+    <path id="Tracciato_3650" data-name="Tracciato 3650" class="cls-2" d="M37.377,17.543a.707.707,0,0,0-.179.984,16.179,16.179,0,0,1,0,18.4.707.707,0,0,0,1.163.805,17.594,17.594,0,0,0,0-20.012A.707.707,0,0,0,37.377,17.543Z" transform="translate(-4.8)"/>
+    <path id="Tracciato_3651" data-name="Tracciato 3651" class="cls-2" d="M28.511,24.525a.707.707,0,1,0-1.163.805,7.708,7.708,0,0,1,0,8.781.707.707,0,0,0,1.163.805,9.123,9.123,0,0,0,0-10.391Z" transform="translate(-1.914 -1.993)"/>
+    <path id="Tracciato_3652" data-name="Tracciato 3652" class="cls-2" d="M31.792,22.258a.707.707,0,0,0-1.163.805,10.524,10.524,0,0,1,0,11.986.707.707,0,0,0,1.163.805,11.939,11.939,0,0,0,0-13.6Z" transform="translate(-2.876 -1.329)"/>
+    <path id="Tracciato_3653" data-name="Tracciato 3653" class="cls-2" d="M20.994,28.86a.707.707,0,0,0-.179.984,2.1,2.1,0,0,1,0,2.4.707.707,0,1,0,1.161.806,3.514,3.514,0,0,0,0-4.009A.707.707,0,0,0,20.994,28.86Z" transform="translate(0 -3.316)"/>
+    <path id="Tracciato_3654" data-name="Tracciato 3654" class="cls-2" d="M25.261,26.771a.707.707,0,1,0-1.163.805,4.921,4.921,0,0,1,0,5.606.707.707,0,0,0,1.163.805,6.336,6.336,0,0,0,0-7.216Z" transform="translate(-0.962 -2.651)"/>
+  </g>
+</svg>

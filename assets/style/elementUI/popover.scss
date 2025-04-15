@@ -1,0 +1,40 @@
+.el-popper {
+  --el-fill-color-light: rgba(255, 255, 255, 0.05) !important;
+  // --el-bg-color-overlay: rgba(2, 2, 2, 0.80) !important;
+  // background: rgba(2, 2, 2, 0.80) !important;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50) !important;
+  --el-border-color-lighter: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(7.5px);
+  border-radius: 5px !important;
+  // padding: 8px !important;
+}
+
+.el-select-dropdown__item {
+  border-radius: 5px;
+}
+
+.el-date-picker {
+  --el-color-primary: #E0B92C !important;
+}
+.el-popper  {
+  .el-tag--dark {
+    border: none;
+    margin-bottom: 6px;
+    margin-right: 6px;
+  }
+}
+
+.el-popper.is-light {
+  --el-bg-color-overlay: #000 !important;
+}
+
+.el-popover.table-popover {
+  padding: 8px;
+  background: #060606 !important;
+  border-color: rgb(255 255 255 / 0.1) !important;
+
+  .el-popper__arrow::before {
+    background: #060606 !important;
+    --el-border-color-light: rgb(255 255 255 / 0.1);
+  }
+}

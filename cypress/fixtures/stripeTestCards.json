@@ -1,0 +1,52 @@
+[
+    {
+      "cardNumber": "4242424242424242",
+      "code": "369",
+      "description": "Standard Visa card with no 3D Secure.",
+      "isWorking": true,
+      "is3DS": false
+    },
+    {
+      "cardNumber": "4000002760003184",
+      "code": "369",
+      "description": "Visa card with 3D Secure required.",
+      "isWorking": true,
+      "is3DS": true
+    },
+    {
+      "cardNumber": "4000000000009995",
+      "code": "369",
+      "description": "Visa card for insufficient funds.",
+      "isWorking": false,
+      "is3DS": false
+    },
+    {
+      "cardNumber": "4000008260000000",
+      "code": "369",
+      "description": "Visa card that triggers a declined payment.",
+      "isWorking": false,
+      "is3DS": true
+    },
+    {
+      "cardNumber": "4000008400001629",
+      "code": "369",
+      "description": "Visa card for 3D Secure authentication failure.",
+      "isWorking": false,
+      "is3DS": true
+    },
+    {
+      "cardNumber": "4000000000000002",
+      "code": "369",
+      "description": "Visa card that triggers a card declined due to fraud.",
+      "isWorking": false,
+      "is3DS": false
+    },
+    {
+      "cardNumber": "4000002500003155",
+      "code": "369",
+      "description": "Visa card for a chargeback scenario.",
+      "isWorking": false,
+      "is3DS": false
+    }
+  ]
+  

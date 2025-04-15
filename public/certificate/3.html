@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Pacifico&family=Merriweather&family=Satisfy&display=swap" />
+</head>
+
+<body class="flex items-center justify-center w-screen h-screen">
+    <div
+        class="relative w-[1200px] h-[900px] rounded border border-white/20 bg-white px-6 pb-4 pt-6 text-center text-black">
+        <svg width="153" height="118" viewBox="0 0 153 118" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="absolute inset-0 h-full w-full">
+            <rect width="50.8146" height="15.7264"
+                transform="matrix(0.718901 -0.695113 0.718901 0.695113 -14.7656 23.1406)" fill="{{brandColor}}" />
+            <line y1="-0.689548" x2="60.3492" y2="-0.689548"
+                transform="matrix(0.718901 -0.695113 0.718901 0.695113 -8.71875 36.4551)" stroke="{{accentColor}}"
+                stroke-width="1.3791" />
+            <rect width="50.8146" height="15.7264"
+                transform="matrix(-0.718901 0.695113 -0.7189 -0.695113 166.828 95.2324)" fill="{{brandColor}}" />
+            <line y1="-0.689548" x2="60.3492" y2="-0.689548"
+                transform="matrix(-0.718901 0.695113 -0.7189 -0.695113 160.789 81.918)" stroke="{{accentColor}}"
+                stroke-width="1.3791" />
+        </svg>
+        <div class="relative z-10 h-full w-full">
+            <div class="mb-8 flex w-full shrink-0 items-center justify-between">
+                <div class="w-64"></div>
+                <div
+                    class="relative flex size-20 items-center justify-center rounded-full border border-dashed border-white/30 bg-black text-sm text-white">
+                    <img src="{{logo}}" class="relative z-10 h-12" />
+                </div>
+                <div class="w-64 text-right text-lg whitespace-nowrap">
+                    Certificate ID: {{ certificateId }}
+                </div>
+            </div>
+            <div class="mb-2 text-2xl font-medium">CERTIFICATE OF ACHIEVEMENT</div>
+            <div class="mb-6 text-lg">{{ year }}</div>
+            <div class="mb-6 font-['Merriweather'] text-[3.2rem]">{{ username }}</div>
+            <div class="mb-4 text-lg">has successfully completed the</div>
+            <div class="mb-8 px-72 font-['Merriweather'] text-[3.4rem] uppercase leading-[1.2]"
+                style="color: {{accentColor}}">
+                {{ courseName }}
+            </div>
+            <div class="mb-4 px-36 text-lg">
+                to certify the successful completion of {{ courseHours }} hours of the
+                “{{ courseName }}” course and achieving the following capabilities:
+            </div>
+            <div class="text-lg">
+                {{ skills}}
+            </div>
+            <div class="mb-12 font-semibold">Provided by: {{ providerName }}</div>
+            <div class="mb-12 flex w-full shrink-0 items-end justify-between px-36">
+                <div class="flex flex-col items-center gap-1">
+                    <div class="text-lg font-bold">{{issuedDate}}</div>
+                    <div class="h-[1px] w-36 bg-[#C7A050]"></div>
+                    <div class="h-10 text-lg">Release DATE</div>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <div class="text-4xl font-light" style="font-family: {{signatureFont}}">
+                        {{ signatureName }}
+                    </div>
+                    <div class="h-[1px] w-36 bg-[#C6A24D]"></div>
+                    <div class="h-10 text-lg">{{ signatoryRole }}</div>
+                </div>
+            </div>
+            <div class="flex shrink-0 items-center justify-center gap-1 text-lg">
+                <img src="/logo/image.png" class="h-6" />
+                Powered by Aladia.io
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+.border-anim::before {
+  content: "";
+
+  position: absolute;
+  z-index: 11;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0.25rem;
+
+  transition: background-color 0.33s;
+
+  animation: anim-border-run 2s linear infinite;
+}
+
+@keyframes anim-border-run {
+  /* 这里将动画分成了4步；也可以改为2步，这时before和after用的就要是两套keyframes了 */
+
+  from,
+  to {
+    width: 1px;
+
+    height: 100%;
+
+    top: 0;
+
+    left: 0;
+  }
+
+  25% {
+    width: 100%;
+
+    height: 1px;
+
+    top: calc(100% - 1px);
+
+    left: 0;
+  }
+
+  50% {
+    width: 1px;
+
+    height: 100%;
+
+    top: 0;
+
+    left: calc(100% - 1px);
+  }
+
+  75% {
+    width: 100%;
+
+    height: 1px;
+
+    top: 0%;
+
+    left: 0%;
+  }
+
+  /* 需要设置临界效果，否则会渐变 */
+
+  from,
+  to,
+  24.9% {
+    border-left-color: rgba(255, 255, 255, 0.6);
+
+    border-top-color: transparent;
+
+    border-right-color: transparent;
+
+    border-bottom-color: rgba(255, 255, 255, 0.6);
+  }
+
+  25%,
+  49.9% {
+    border-left-color: transparent;
+
+    border-top-color: transparent;
+
+    border-right-color: rgba(255, 255, 255, 0.6);
+
+    border-bottom-color: rgba(255, 255, 255, 0.6);
+  }
+
+  50%,
+  74.9% {
+    border-left-color: transparent;
+
+    border-top-color: rgba(255, 255, 255, 0.6);
+
+    border-right-color: rgba(255, 255, 255, 0.6);
+
+    border-bottom-color: transparent;
+  }
+
+  75%,
+  99.9% {
+    border-left-color: rgba(255, 255, 255, 0.6);
+
+    border-top-color: rgba(255, 255, 255, 0.6);
+
+    border-right-color: transparent;
+
+    border-bottom-color: transparent;
+  }
+}
+
+.hover-tooltip:hover {
+  position: relative;
+}
+
+.hover-tooltip:hover:after {
+  background: rgba(7, 7, 7, 0.8);
+  border-radius: 5px;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.5);
+  content: attr(data-tooltip);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 400;
+  height: 24px;
+  left: 50%;
+  position: absolute;
+  top: 60%;
+  transform: translate(-50%, 80%);
+  padding: 0 15px;
+  z-index: 2000;
+}
+
+.hover-t-tooltip:hover {
+  position: relative;
+}
+
+.hover-t-tooltip:hover:after {
+  background: rgba(7, 7, 7, 0.8);
+  border-radius: 5px;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.5);
+  content: attr(data-tooltip);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  height: 25px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -110%);
+  padding: 0 15px;
+  z-index: 2000;
+}
+
+.hover-light:hover {
+  position: relative;
+}
+
+.hover-light:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  z-index: 8;
+  transform: translate(-50%, 0);
+  width: 66%;
+  height: 20px;
+  border-radius: 50%/50%;
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.6);
+  transition: all 300ms;
+}

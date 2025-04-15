@@ -1,0 +1,25 @@
+export const useHubAnalyticsStore = defineStore('hubAnalytics', {
+  state: () => ({
+    widgets: {
+      'courses-monitoring': 'org.hub.analytics.courses.monitoring',
+      'courses-report': 'org.hub.analytics.courses.report',
+      'incoming-events': 'org.hub.task.manage.event',
+      'monitoring-activity': 'org.dashboard.monitoring.activity',
+      'payment-chart': 'org.hub.task.manage.payment',
+      'qa-report': 'org.hub.analytics.qa.report',
+      'reviews-report': 'org.hub.analytics.reviews.report',
+      'space-maintenance': 'org.hub.task.manage.maintenance',
+      'users-activity': 'org.hub.analytics.activity.users',
+    },
+    widgetGeneral: false,
+    widgetMonitoring: false,
+    widgetPersonalized: false,
+    widgetSelected: [],
+    widgetPreview: '',
+    widgetActive: [],
+    widgetDragging: false,
+    dashboardType: 'personalized',
+    coursesReportDetail: null,
+    filter: 0,
+  }),
+});

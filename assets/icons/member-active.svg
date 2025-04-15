@@ -1,0 +1,10 @@
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Rectangle 199 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M29 2H5C3.34315 2 2 3.34315 2 5V29C2 30.6569 3.34315 32 5 32H29C30.6569 32 32 30.6569 32 29V5C32 3.34315 30.6569 2 29 2ZM5 0C2.23858 0 0 2.23858 0 5V29C0 31.7614 2.23858 34 5 34H29C31.7614 34 34 31.7614 34 29V5C34 2.23858 31.7614 0 29 0H5Z" fill="url(#paint0_radial_596_20517)"/>
+<defs>
+<radialGradient id="paint0_radial_596_20517" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17 17) rotate(90) scale(20.6429)">
+<stop stop-color="#DCAE0C" stop-opacity="0"/>
+<stop offset="0.864673" stop-color="#DCAE0C" stop-opacity="0"/>
+<stop offset="1" stop-color="#DCAE0C"/>
+</radialGradient>
+</defs>
+</svg>

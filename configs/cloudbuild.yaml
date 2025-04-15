@@ -1,0 +1,49 @@
+steps:
+  - id: 'Install dependencies'
+    name: 'node:18'
+    entrypoint: yarn
+    args: ['install']
+
+  - id: 'Remove data-cy'
+    name: 'node:18'
+    entrypoint: npm
+    args: ['run', 'remove:cy']
+
+  - id: 'Build application'
+    name: 'node:18'
+    entrypoint: npm
+    args: ['run', 'build']
+
+  - id: 'Update runtime configuration'
+    name: 'node:18'
+    entrypoint: /bin/sh
+    args:
+      - '-c'
+      - |
+        if [ "$BRANCH_NAME" = "prod" ] || [ "$BRANCH_NAME" = "develop" ]; then
+          sed -i "s/\"BRANCH_NAME\": \"\"/\"BRANCH_NAME\": \"$BRANCH_NAME\"/" .output/server/chunks/nitro/nitro.mjs
+        fi
+
+  - id: 'Delete old app versions'
+    name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: /bin/bash
+    args:
+      - '-c'
+      - |
+        gcloud app versions list --service default --format="value(version.id)" --sort-by="~version.createTime" | tail -n +3 | xargs -r gcloud app versions delete --quiet
+
+  - id: 'Deploy application'
+    name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: /bin/sh
+    args:
+      - '-c'
+      - |
+        if [ "$BRANCH_NAME" = "prod" ] || [ "$BRANCH_NAME" = "develop" ]; then
+          echo "Deploying to $BRANCH_NAME..."
+          gcloud app deploy "$BRANCH_NAME.yaml" --quiet
+        else
+          echo "Branch not recognized. Skipping deployment."
+        fi
+
+options:
+  logging: CLOUD_LOGGING_ONLY

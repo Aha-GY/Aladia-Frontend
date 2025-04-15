@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Sfumatura_senza_nome_2);
+      }
+
+      .cls-2 {
+        fill: url(#Sfumatura_senza_nome_3);
+      }
+    </style>
+    <linearGradient id="Sfumatura_senza_nome_2" data-name="Sfumatura senza nome 2" x1="-271.29" y1="403.3" x2="-270.33" y2="402.75" gradientTransform="translate(4342.86 5253.98) scale(16 -13)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#685a23"/>
+      <stop offset=".49" stop-color="#f5ee88"/>
+      <stop offset="1" stop-color="#8b823a"/>
+    </linearGradient>
+    <linearGradient id="Sfumatura_senza_nome_3" data-name="Sfumatura senza nome 3" x1="-260.38" y1="377.26" x2="-259.8" y2="376.69" gradientTransform="translate(2609.29 2643.78) scale(10 -7)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b8b7b7"/>
+      <stop offset=".37" stop-color="#b9b9b9"/>
+      <stop offset="1" stop-color="#4b4a4b"/>
+    </linearGradient>
+  </defs>
+  <path id="Lock_body-2" data-name="Lock body-2" class="cls-1" d="m13,7H3C1.37,6.97.03,8.26,0,9.89c0,.04,0,.07,0,.11v7c-.03,1.63,1.26,2.97,2.89,3,.04,0,.07,0,.11,0h10c1.63.03,2.97-1.26,3-2.89,0-.04,0-.07,0-.11v-7c.03-1.63-1.26-2.97-2.89-3-.04,0-.07,0-.11,0Zm-4,8c0,.55-.45,1-1,1s-1-.45-1-1v-3c0-.55.45-1,1-1s1,.45,1,1v3Z"/>
+  <path id="Lock_Ring-2" data-name="Lock Ring-2" class="cls-2" d="m13,7v-2c0-2.76-2.24-5-5-5S3,2.24,3,5v2h10Zm-8-2c0-1.66,1.34-3,3-3s3,1.34,3,3v2h-6v-2Z"/>
+</svg>

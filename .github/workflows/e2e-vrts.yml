@@ -1,0 +1,85 @@
+name: E2E test and VRTs test
+
+on:
+  pull_request:
+    branches:
+      - "**"
+      
+permissions:
+  contents: read
+  actions: write
+  checks: write
+  
+jobs:
+  e2e_tests:
+    name: E2E Tests [Cypress & Chromatic]
+    
+    runs-on: ubuntu-latest
+    
+    strategy:
+      fail-fast: false
+      matrix:
+        containers: [1]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Write the cypress.env.json file 
+        run: |
+          echo '${{ secrets.CYPRESS_ENV_FILE }}' > cypress.env.json
+      
+      - name: Install dependencies
+        run: yarn
+      
+      - name: Test and Build the application
+        run: |
+          yarn lint
+          yarn prettier
+          export NODE_OPTIONS="--max-old-space-size=4096"
+          yarn build
+        env:
+          CI: true
+
+      - name: Install Apidog CLI
+        run: npm install -g apidog-cli
+
+      - name: Write ApiDog database connections
+        run: |
+          cat <<EOT > database-connections.json
+          ${{ secrets.APIDOG_DB_CONNECTIONS }}
+          EOT
+
+      - name: Running Seed Test Scenarios
+        run: |
+         set -e
+         apidog run --access-token ${{ secrets.APIDOG_TOKEN }} -f 780006 -e ${{ vars.APIDOG_ENV }} --verbose -r cli,html --database-connection database-connections.json
+
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v6
+        with:
+          start: yarn start
+          wait-on: 'http://localhost:3000'
+          record: ${{ github.event.pull_request.base.ref == 'develop' || github.event.pull_request.base.ref == 'prod' }}
+          parallel: ${{ github.event.pull_request.base.ref == 'develop' || github.event.pull_request.base.ref == 'prod' }}
+        env:
+          ELECTRON_EXTRA_LAUNCH_ARGS: "--remote-debugging-port=9222"
+          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Run Chromatic
+        uses: chromaui/action@latest
+        with:
+          cypress: true
+          projectToken: ${{ secrets.CHROMATIC_E2E_PROJECT_TOKEN }}
+        env:
+          CHROMATIC_ARCHIVE_LOCATION: ./cypress/downloads
+
+

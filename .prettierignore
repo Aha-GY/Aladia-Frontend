@@ -1,0 +1,14 @@
+node_modules
+*.log*
+.nuxt
+.github
+.nitro
+.cache
+.output
+.env
+dist
+*.json
+*.md
+*.lock
+assets
+public
